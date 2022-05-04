@@ -1,0 +1,31 @@
+.logInPage {
+  padding-top: 12px;
+  background-color: whitesmoke;
+}
+.logInPage h1 {
+  font-size: 36px;
+}
+.logInPage form .button {
+  margin-top: 6px;
+}
+.logInPage form h5 {
+  font-size: 16px;
+  margin: 12px;
+}
+.logInPage form input {
+  width: 90%;
+  height: 30px;
+}
+.logInPage form button {
+  width: 90%;
+  height: 50px;
+  margin: 12px 0;
+  background-color: rebeccapurple;
+}
+.logInPage form button h2 {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  color: white;
+}/*# sourceMappingURL=LoginPage.css.map */

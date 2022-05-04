@@ -1,0 +1,48 @@
+.linkToProducts {
+  display: flex;
+  justify-content: end;
+}
+.linkToProducts a {
+  color: #131921;
+  text-decoration: underline;
+}
+
+.linkToProducts {
+  margin-right: 16px;
+}
+
+.similarProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.similarProducts .dataContainer {
+  width: 40%;
+  margin: 12px;
+}
+.similarProducts .dataContainer h1 {
+  font-size: 14px;
+  font-family: "Lato";
+  color: #001f3f;
+}
+.similarProducts .dataContainer h4 {
+  color: firebrick;
+  font-family: lato;
+  font-size: 12px;
+}
+.similarProducts .dataContainer .price {
+  font-size: 14px;
+  background-color: #001f3f;
+  color: white;
+  align-items: center;
+  margin: 12px 24px;
+  padding: 8px;
+  border-radius: 50%;
+  font-family: "lato";
+}
+
+@media (min-width: 768px) {
+  .similarProducts .dataContainer .price {
+    margin: 12px 110px;
+  }
+}/*# sourceMappingURL=OtherProducts.css.map */

@@ -1,0 +1,232 @@
+.mobile_header {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .header_nav{
+        display: flex;
+        margin: 12px 0 0 0;
+        color: white;
+        width: 90%;
+        justify-content: space-between;
+        align-items: baseline;
+        .header_links {
+            display: flex;
+            margin: 12px 0 24px 0;
+            color: white;
+            width: 100%;
+            justify-content: space-evenly;
+            
+            
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+        }
+        
+    }
+    .top_HeaderContainer{
+        text-align: start;
+        width: 80%;
+        .header_logoContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            a{
+                text-decoration: none;
+            }
+            .header_optionBasket{
+                display: flex;
+                align-items: center;
+                .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.header__logo.css-i4bv87-MuiSvgIcon-root{
+                    fill: white;
+                    margin: 24px 0 24px 24px;
+                }
+                span{
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+}
+
+.header_logo{
+    width: 60%;
+    object-fit: contain;
+    margin: 12px 0;
+    
+}
+
+.header_search{
+    display: flex;
+    
+    align-items: center;
+    border-radius: 24px;
+}
+
+.header_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header_searchIcon {
+    padding: 5px;
+    height: 22px;
+    background-color: orange;
+}
+
+
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.header_logo.css-i4bv87-MuiSvgIcon-root{
+    fill: white;
+}
+
+.tablet_header{
+    display: none;
+}
+
+@media (min-width:768px) {
+    .mobile_header{
+        display: none;
+    }
+
+    .tablet_header {
+        display: flex;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #131921;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        .tabletheader_nav{
+            display: flex;
+            color: white;
+            width: 85%;
+            justify-content: space-between;
+            align-items: baseline;
+            .tabletheader_links {
+                display: flex;
+                margin: 12px 0 24px 0;
+                color: white;
+                width: 80%;
+                justify-content: space-between;
+                font-family: cursive;
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+            
+        }
+        .tablettop_HeaderContainer{
+            text-align: start;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            .tabletheader_optionBasket{
+                display: flex;
+                align-items: center;
+                .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.tabletheader_logo.css-i4bv87-MuiSvgIcon-root{
+                    fill: white;
+                    margin: 24px 0 24px 24px;
+                }
+                span{
+                    color: white;
+                    
+                }
+            .tabletheader_logoContainer{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: fit-content
+                a{
+                    text-decoration: none;
+                }
+               
+                   
+                }
+            }
+        }
+    }
+    
+    .tabletheader_logo{
+        width: 60%;
+        object-fit: contain;
+        margin: 12px 0;
+        
+    }
+    
+    .tabletheader_search{
+        display: flex;
+        
+        align-items: center;
+        border-radius: 24px;
+        width: 50%;
+        position: relative;
+        right: 38px;
+        top: 3px;
+    }
+    
+    .tabletheader_searchInput {
+        height: 12px;
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+    
+    .tabletheader_searchIcon {
+        padding: 5px;
+        height: 22px;
+        background-color: orange;
+    }
+    
+    
+    
+    .tabletheader_option{
+        display: flex;
+        flex-direction: column;
+        span{
+            color: white;
+            font-size: 18px;
+            font-family: cursive;
+        }
+    }
+    
+    .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.header_logo.css-i4bv87-MuiSvgIcon-root{
+        fill: white;
+    }
+    
+    .tablettablet_header{
+        display: none;
+    }
+
+    .tabletheader_navcontainer{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+}
+
+
+
+
