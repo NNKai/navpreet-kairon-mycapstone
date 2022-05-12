@@ -2,23 +2,31 @@ a{
     text-decoration: none;
 }
 
-.product_outsideContainer{
-    .product__Container{
-        width: 80%;
-        display: inline-table;
-        margin-bottom: 24px;
-        h1{
-            font-size: 16px;
-            font-family: "Lato";
-            color: #001f3f;
-        }
-    }
-}
+
 
 .big_productContainer{
     background-color: rgba(237, 238, 240, 0.92);
+    font-family: 'lato';
+    .productTitle{h1{
+        font-size: 24px;
+        font-family: "Lato";
+        color: #001f3f;
+    }}
+    .product_outsideContainer{
+        margin: 12px 0;
+       
+        .product__Container{
+            width: 80%;
+            display: inline-table;
+            margin-bottom: 24px;
+            h1{
+                font-size: 16px;
+                color: #001f3f;
+            }
+        }
+    }
     .heroProductTitle{
-        margin: 16px 32px;
+        
         h1{
         font-size: 24px;
         color: #001f3f;
@@ -27,22 +35,7 @@ a{
 }
 
 @media (min-width:720px) {
-    .big_productContainer{.heroProductTitle{
-        margin: 16px 32px;
-        h1{
-        font-size: 24px;
-        color: white;
-        margin-block-end: 0;
-        margin-block-start: 0;
-        }
-    }
-}
-    .big_productContainer{
-        .heroProductTitle{
-            margin: 16px 53px;
-            
-    }   
-    }
+.big_productContainer{
     .product_outsideContainer{
         display: flex;
         flex-wrap: wrap;
@@ -60,7 +53,28 @@ a{
             }
             .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1633um2-MuiPaper-root{
                 min-height:max-content;
+                height: 360px;
+            }
+        }
+    }}
+}
+
+@media (min-width:1280px) {
+
+.big_productContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+    .product_outsideContainer{
+        
+        .product__Container{
+            
+        
+            .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1633um2-MuiPaper-root{
+                min-height:max-content;
+                height: 500px;
             }
         }
     }
+  }
+
 }

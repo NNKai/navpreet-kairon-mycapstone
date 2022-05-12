@@ -4,6 +4,7 @@ import FeaturedProduct from '../FeaturedProduct/FeaturedProduct'
 import Products from '../../Pages/Products/Products'
 import OtherProducts from '../OtherProducts/OtherProducts'
 import { Link } from 'react-router-dom'
+import '../../App.css'
 
 
 export class HomePage extends Component {
@@ -40,10 +41,11 @@ export class HomePage extends Component {
   render() {
     return (
         <>
-            
+            <div className="big_productContainer">
           <FeaturedProduct heroProduct={this.state.featuredProduct}/>
           <hr/>
           <OtherProducts similarProduct={this.state.otherProducts}/>
+          </div>
           </>
     )
   }

@@ -13,7 +13,11 @@ import React, {useEffect} from 'react';
 import { auth } from './Pages/LogInPage/firebase';
 import {useStateValue} from './StateProvider'
 import CategoryList from './Pages/CategoryList/CategoryList';
+import Payment from './Pages/Payment/Payment';
+import {loadStripe} from '@stripe/stripe-js'
+import {Elements} from '@stripe/react-stripe-js'
 
+const loading = loadStripe('pk_test_51KyR35AGGXbHgiGgiycNo8oK29y7INYcg3GKJUeMOIufd2aY1pPxzSHkZb45v0v8Db2xuKAXRpjTioiw2x2TMnMz00EIIyKnw9')
 
 function App () {
   const [{}, dispatch] = useStateValue();
@@ -41,16 +45,21 @@ function App () {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header />
+     
       <Switch>
+        
       <Route exact path='/login' component={LogInPage}/>
-      <Route exact path='/' component= {HomePage}/>
-      <Route exact path='/products' component= {Product}  />
-      <Route exact path='/products/:id' component= {ProductDetails}  />
-      <Route exact path='/category' component= {CategoryList}  />
-      <Route exact path='/category/:category' component= {CategoryPage}  />
-      <Route exact path='/checkoutpage' component= {CheckoutPage}  />
-      <Route exact path='/:id' component= {Test}  />
+      <Route exact path='/'>
+        <Header/>
+        <HomePage/>
+      </Route>
+      <Route exact path='/products'> <Header/><Product/></Route> 
+      <Route exact path='/products/:id' ><Header/><ProductDetails/></Route>
+      <Route exact path='/category' ><Header/><CategoryList/></Route>
+      <Route exact path='/category/:category' ><Header/><CategoryPage/></Route>
+      <Route exact path='/checkoutpage'><Header/><CheckoutPage/>  </Route> 
+      <Route exact path='/payment'><Header/><Elements stripe = {loading}><Payment/></Elements></Route>
+      
       </Switch>
       </BrowserRouter>
     </div>

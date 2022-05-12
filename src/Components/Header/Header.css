@@ -215,4 +215,9 @@
     justify-content: space-between;
     width: 40%;
   }
+}
+@media (min-width: 1280px) {
+  .tablet_header .tabletheader_nav .tabletheader_links a {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=Header.css.map */

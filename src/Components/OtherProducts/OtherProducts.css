@@ -35,7 +35,8 @@
   background-color: #001f3f;
   color: white;
   align-items: center;
-  margin: 12px 24px;
+  width: 50px;
+  margin: 12px auto;
   padding: 8px;
   border-radius: 50%;
   font-family: "lato";

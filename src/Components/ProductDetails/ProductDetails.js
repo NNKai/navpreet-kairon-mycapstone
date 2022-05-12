@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useStateValue } from '../../StateProvider';
-
+import './ProductDetails.css'
 
 
 function ProductDetails(props) {
@@ -55,15 +55,17 @@ function ProductDetails(props) {
         color: theme.palette.text.secondary,
       }));
     return (
-      <div>
+      <div className='productdetail_container'>
           <Box sx={{ width: '100%' }}>
                             <Stack spacing={2}>
+                                <Item>
                                 <h1>{productData.title}</h1>
                                 <h4>{productData.category}</h4>
                                 <img src={productData.image}></img>
-                                <p>${productData.price}</p>
+                                <div className='price'><span><p>${productData.price}</p></span></div>
                                 <p>{productData.description}</p>
                                 <button onClick={addToCart}>Add to Cart</button>
+                                </Item>
                             </Stack>
                         </Box>
             

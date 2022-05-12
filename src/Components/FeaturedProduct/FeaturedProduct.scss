@@ -1,18 +1,26 @@
 .heroProductTitle{
     margin: 16px;
-    h1{
-    font-size: 24px;
-    background-color: #131921;
-    color: white;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    .css-nen11g-MuiStack-root{
+        .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.css-1633um2-MuiPaper-root
+        h1{
+            font-size: 24px;
+            background-color: #131921;
+            color: white;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
 }
 }
-
+.price{
+    width: 50px;
+    margin: 12 auto;
+}
 .heroProduct{
     .heroProductImg{
         width: 90%;
         margin-top: 12px;
+        max-height: 150px;
     }
     .heroProductMobile{
         margin: 16px;
@@ -43,7 +51,8 @@
                 background-color: #001f3f;
                 color: white;
                 align-items: center;
-                margin: 12px 104px;
+                margin: 12px auto;
+                width: 50px;
                 padding: 8px;
                 border-radius: 50%;
                 font-family: 'lato';
@@ -55,17 +64,48 @@
 
 @media (min-width:768px) {
 
-      .heroProduct{  .heroProductMobile{
+    .heroProduct {
+        .heroProductTitle{
             margin: 16px 36px;
-            .heroProductDetails{
-               img{
-                width: 60%;
-               } 
-               .price{
-                   margin: 12px 300px;
-                   font-family: 'lato';
-               }
-            }
         }
-    
+        .heroProductMobile{
+            margin: 16px 36px;
+            .heroProductDetails {
+                img{
+                    width: 60%;
+                }
+                .price{
+                    margin: 12 auto;
+                }
+            } 
+        }
+    }
+}
+
+
+@media (min-width:1280px) {
+   
+    .heroProduct{
+        .heroProductMobile{
+            margin: 24px 120px;
+            height: fit-content;
+        }
+        .heroProductTitle{
+            margin: 16px 120px;
+        }
+        .heroProductImg{
+            
+                width: 60%;
+            
+        }
+       
+          .heroProductMobile{
+          
+          .heroProductDetails{
+             img{
+              width: 40%;
+             } 
+          }
+      }
+  
 }}
