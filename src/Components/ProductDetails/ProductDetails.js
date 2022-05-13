@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useStateValue } from '../../StateProvider';
 import './ProductDetails.css'
+import OtherProducts from '../OtherProducts/OtherProducts';
 
 
 function ProductDetails(props) {
@@ -55,6 +56,7 @@ function ProductDetails(props) {
         color: theme.palette.text.secondary,
       }));
     return (
+        <>
       <div className='productdetail_container'>
           <Box sx={{ width: '100%' }}>
                             <Stack spacing={2}>
@@ -71,6 +73,8 @@ function ProductDetails(props) {
             
             {/* <p>Rating : {this.state.singleProductDetail.rating.rate}</p> */}
       </div>
+      
+      </>
     )
   
 }

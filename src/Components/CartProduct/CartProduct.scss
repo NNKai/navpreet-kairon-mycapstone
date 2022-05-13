@@ -1,0 +1,69 @@
+.checkoutPage{
+    .checkout__left{
+        h2{
+            font-size: 24px;
+        }
+        .cartProduct{
+            img{
+                width: 40%;
+            }
+            .checkoutProduct_info{
+                .checkoutProduct__title{
+                    font-size: 14px;
+                }
+            }
+            button{
+                background-color: orange;
+                color: #131921;
+                font-size: 14px;
+                font-family: 'lato';
+                border: none;
+                border-radius: 5%;
+                height: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+    .checkout__right{
+        .subtotal{
+            button{
+                background-color: orange;
+                color: #131921;
+                font-size: 14px;
+                font-family: 'lato';
+                border: none;
+                border-radius: 5%;
+                height: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .checkoutPage{
+        width: 70%;
+        margin: 0 auto;
+        .checkout__left{
+            .cartProduct{
+                img{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1280px) {
+    .checkoutPage{
+        
+        .checkout__left{
+            .cartProduct{
+                img{
+                    width: 20%;
+                    
+                }
+            }
+        }
+    }
+}

@@ -32,17 +32,19 @@ function LogInPage() {
 
   return (
     <div className='logInPage'>
+       <h1>Login</h1>
       <div className='loginImg'>
-        <img src={LoginLogo}></img>
+        {/* <img src={LoginLogo}></img> */}
       </div>
+     
       <form>
         <h5>E-mail</h5>
         <input type='text' value={email} onChange={e=>setEmail(e.target.value)}/>
         <h5>Password</h5>
         <input type='password'value={password} onChange={e=>setPassword(e.target.value)}/>
         <div className='button'>
-        <button className='Login_button' type='submit'  onClick={signIn}><h2>Login</h2></button></div>
-        <button className='register_button' onClick={register}><h2>Create your Account</h2></button>
+        <button className='Login_button' type='submit'  onClick={signIn}><h3>Login</h3></button></div>
+        <button className='register_button' onClick={register}><h3>Create your Account</h3></button>
       </form>
     </div>
   )

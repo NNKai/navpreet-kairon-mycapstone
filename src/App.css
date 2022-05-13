@@ -6,6 +6,17 @@
   background-color: rgba(237, 238, 240, 0.92);
 }
 
+button{
+  background-color: orange;
+  color: #131921;
+  font-size: 14px;
+  font-family: 'lato';
+  border: none;
+  border-radius: 5%;
+  height: 40px;
+  font-weight: bold;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

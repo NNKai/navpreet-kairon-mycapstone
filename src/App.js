@@ -17,7 +17,7 @@ import Payment from './Pages/Payment/Payment';
 import {loadStripe} from '@stripe/stripe-js'
 import {Elements} from '@stripe/react-stripe-js'
 
-const loading = loadStripe('pk_test_51KyR35AGGXbHgiGgiycNo8oK29y7INYcg3GKJUeMOIufd2aY1pPxzSHkZb45v0v8Db2xuKAXRpjTioiw2x2TMnMz00EIIyKnw9')
+const promise = loadStripe('pk_test_51KyR35AGGXbHgiGgiycNo8oK29y7INYcg3GKJUeMOIufd2aY1pPxzSHkZb45v0v8Db2xuKAXRpjTioiw2x2TMnMz00EIIyKnw9')
 
 function App () {
   const [{}, dispatch] = useStateValue();
@@ -58,7 +58,7 @@ function App () {
       <Route exact path='/category' ><Header/><CategoryList/></Route>
       <Route exact path='/category/:category' ><Header/><CategoryPage/></Route>
       <Route exact path='/checkoutpage'><Header/><CheckoutPage/>  </Route> 
-      <Route exact path='/payment'><Header/><Elements stripe = {loading}><Payment/></Elements></Route>
+      <Route exact path='/payment'><Header/><Elements stripe = {promise}><Payment/></Elements></Route>
       
       </Switch>
       </BrowserRouter>

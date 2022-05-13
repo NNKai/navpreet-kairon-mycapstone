@@ -45,8 +45,16 @@
 @media (min-width:768px) {
     .similarProducts{
         .dataContainer{
+            a{
+                .heroProductDetails{
+                    img{width: 40%;}
+                }
+            }
+                
+        
+           
             .price{
-                margin: 12px 110px;
+                margin: 12px auto;
             }
         }
     }

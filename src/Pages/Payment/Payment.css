@@ -1,0 +1,30 @@
+.payment_section {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+.payment_section .payment_details {
+  background-color: white;
+  margin-bottom: 20px;
+}
+.payment_section .payment_details form .payment_price {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+}
+.payment_section .payment_details form button {
+  width: 100px;
+  margin: 12px auto;
+}
+
+.payment {
+  height: 100vh;
+}
+
+@media (min-width: 1280px) {
+  .payment_section {
+    width: 40%;
+  }
+}/*# sourceMappingURL=Payment.css.map */

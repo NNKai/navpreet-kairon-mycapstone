@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStateValue } from '../../StateProvider';
+import './CartProduct.css'
 
 function CartProduct({id,image,title,price}) {
     const [{basket}, dispatch] = useStateValue();
@@ -19,7 +20,9 @@ function CartProduct({id,image,title,price}) {
           <p className='checkoutProduct__price'>{price}</p>
       </div>
       <button onClick={removeFromCart}>Remove from Basket</button>
+     
     </div>
+    
   )
 }
 

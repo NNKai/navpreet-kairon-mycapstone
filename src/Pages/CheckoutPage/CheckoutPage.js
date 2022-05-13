@@ -4,13 +4,14 @@ import Subtotal from '../../Components/Subtotal/Subtotal';
 import CartProduct from '../../Components/CartProduct/CartProduct';
 import { useStateValue } from '../../StateProvider';
 
+
 function CheckoutPage ()  {
     const [{basket}, dispatch] = useStateValue();
 
     return (
       <div className='checkoutPage'>
           <div className='checkout__left'>
-              <div>
+              <div className='cart__container'>
                     <h2 className='checkout__title'>
                         Your Shopping Basket
                     </h2>

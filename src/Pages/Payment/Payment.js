@@ -7,6 +7,7 @@ import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal } from '../../Components/Reducer/Reducer';
 import axios from '../../Components/axios';
 import {useHistory} from 'react-router-dom'
+import './Payment.css'
 
 
 
@@ -29,9 +30,6 @@ function Payment() {
         const getClientSecret = async () =>{
             const response = await axios({
                 method : 'post',
-                headers:{
-                    'Content-Type':'application/json'
-                },
                 url: `/payments/create?total=${getBasketTotal(basket) *100 }`
             });
             setClientSecret(response.data.clientSecret)
@@ -41,8 +39,8 @@ function Payment() {
 
     console.log('scret', clientSecret)
 
-    const handleSubmit = async(e) =>{
-        e.preventDefault();
+    const handleSubmit = async(event) =>{
+        event.preventDefault();
         setProcessing(true)
 
         const payload = await stripe.confirmCardPayment(clientSecret,{
@@ -53,13 +51,13 @@ function Payment() {
             setSucceeded(true)
             setError(null)
             setProcessing(false)
-            history.replace('/orders')
+            history.replace('/')
         })
     }
 
-    const handleChange= (e) =>{
-        setDisabled(e.empty);
-        setError(e.error ? e.error.message : "");
+    const handleChange= (event) =>{
+        setDisabled(event.empty);
+        setError(event.error ? event.error.message : "");
     }
 
   return (
@@ -75,12 +73,12 @@ function Payment() {
                     <p>Calgary, AB</p>
                 </div>
             </div>
+            <hr></hr>
             <div className='payment_section'>
                 <div className='payment_title'>
-                    <h3>Your products</h3>
                 </div>
                 <div className='payment_items'>
-                    {basket.map(item=>(
+                    {/* {basket.map(item=>(
                         <CheckoutPage
                         id={item.id}
                         title={item.title}
@@ -88,7 +86,7 @@ function Payment() {
                         price={item.price}
                         
                         />
-                    ))}
+                    ))} */}
                 </div>
             </div>
             <div className='payment_section'>
