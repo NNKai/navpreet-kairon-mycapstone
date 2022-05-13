@@ -146,8 +146,10 @@
     align-items: center;
   }
   .tablet_header .tablettop_HeaderContainer .tabletheader_optionBasket .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.tabletheader_logo.css-i4bv87-MuiSvgIcon-root {
-    fill: white;
     margin: 24px 0 24px 24px;
+  }
+  .tablet_header .tablettop_HeaderContainer .tabletheader_optionBasket .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.tabletheader_logo.css-i4bv87-MuiSvgIcon-root path {
+    fill: white;
   }
   .tablet_header .tablettop_HeaderContainer .tabletheader_optionBasket span {
     color: white;
