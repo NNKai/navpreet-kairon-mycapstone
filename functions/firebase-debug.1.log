@@ -1,0 +1,227 @@
+[debug] [2022-05-13T21:20:21.678Z] ----------------------------------------------------------------------
+[debug] [2022-05-13T21:20:21.680Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Home\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5002
+[debug] [2022-05-13T21:20:21.680Z] CLI Version:   10.9.2
+[debug] [2022-05-13T21:20:21.681Z] Platform:      win32
+[debug] [2022-05-13T21:20:21.681Z] Node Version:  v14.17.3
+[debug] [2022-05-13T21:20:21.682Z] Time:          Fri May 13 2022 14:20:21 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-05-13T21:20:21.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-13T21:20:21.759Z] Object ".emulators.functions" in "firebase.json" has unknown property: {"additionalProperty":"predeploy"}
+[debug] [2022-05-13T21:20:21.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-13T21:20:21.765Z] > authorizing via signed-in user (navkairon@gmail.com)
+[debug] [2022-05-13T21:20:21.765Z] [iam] checking project mycapstoneproject-1bc50 for permissions ["firebase.projects.get"]
+[debug] [2022-05-13T21:20:21.767Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycapstoneproject-1bc50:testIamPermissions [none]
+[debug] [2022-05-13T21:20:21.767Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycapstoneproject-1bc50:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-13T21:20:22.492Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycapstoneproject-1bc50:testIamPermissions 200
+[debug] [2022-05-13T21:20:22.492Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mycapstoneproject-1bc50:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-13T21:20:22.493Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50 [none]
+[debug] [2022-05-13T21:20:23.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50 200
+[debug] [2022-05-13T21:20:23.121Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50 {"projectId":"mycapstoneproject-1bc50","projectNumber":"919424891838","displayName":"myCapstoneProject","name":"projects/mycapstoneproject-1bc50","resources":{"hostingSite":"mycapstoneproject-1bc50"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client'...
+[info] 
+[debug] [2022-05-13T21:20:23.128Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/sites 
+[warn] !  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-05-13T21:20:23.141Z] defaultcredentials: writing to file C:\Users\Home\AppData\Roaming\firebase\navkairon_gmail_com_application_default_credentials.json
+[debug] [2022-05-13T21:20:23.143Z] Setting GAC to C:\Users\Home\AppData\Roaming\firebase\navkairon_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Home\\AppData\\Roaming\\firebase\\navkairon_gmail_com_application_default_credentials.json"}}
+[debug] [2022-05-13T21:20:23.144Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/adminSdkConfig [none]
+[debug] [2022-05-13T21:20:23.349Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/adminSdkConfig 200
+[debug] [2022-05-13T21:20:23.349Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/adminSdkConfig {"projectId":"mycapstoneproject-1bc50","storageBucket":"mycapstoneproject-1bc50.appspot.com"}
+[debug] [2022-05-13T21:20:24.488Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/sites 200
+[debug] [2022-05-13T21:20:24.488Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/sites {"sites":[{"name":"projects/mycapstoneproject-1bc50/sites/mycapstoneproject-1bc50","defaultUrl":"https://mycapstoneproject-1bc50.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-05-13T21:20:24.489Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/webApps/-/config [none]
+[debug] [2022-05-13T21:20:25.456Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/webApps/-/config 200
+[debug] [2022-05-13T21:20:25.457Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mycapstoneproject-1bc50/webApps/-/config {"projectId":"mycapstoneproject-1bc50","appId":"1:919424891838:web:a0e229c6708872cffb57ef","storageBucket":"mycapstoneproject-1bc50.appspot.com","apiKey":"AIzaSyBoHV-bk0vFrp9X1czLfIyPbXI0o1dB0RU","authDomain":"mycapstoneproject-1bc50.firebaseapp.com","messagingSenderId":"919424891838"}
+[info] i  functions: Watching "C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\" for Cloud Functions..."}}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[debug] [2022-05-13T21:20:25.501Z] Validating nodejs source
+[debug] [2022-05-13T21:20:29.160Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-13T21:20:29.161Z] Building nodejs source
+[debug] [2022-05-13T21:20:29.161Z] Analyzing nodejs backend spec
+[debug] [2022-05-13T21:20:29.162Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-05-13T21:20:29.486Z] Serving at port 9005
+
+[debug] [2022-05-13T21:20:29.669Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-05-13T21:20:29.678Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5003/mycapstoneproject-1bc50/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5003/mycapstoneproject-1bc50/us-central1/api)."}}
+[debug] [2022-05-13T21:22:59.039Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-13T21:22:59.040Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-13T21:22:59.040Z] Accepted request POST /mycapstoneproject-1bc50/us-central1/api/payments/create?total=2598 --> us-central1-api
+[debug] [2022-05-13T21:22:59.052Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-05-13T21:22:59.052Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-05-13T21:22:59.052Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-05-13T21:22:59.053Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: Assigning socketPath: \\?\pipe\C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\1648 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\1648"}}
+[debug] [2022-05-13T21:22:59.053Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: BUSY"}}
+[debug] [2022-05-13T21:23:01.716Z] [runtime-status] [1648] Functions runtime initialized. {"cwd":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions","node_version":"14.17.3"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\",\"node_version\":\"14.17.3\"}"}}
+[debug] [2022-05-13T21:23:01.719Z] [runtime-status] [1648] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Disabled runtime features: undefined"}}
+[debug] [2022-05-13T21:23:01.724Z] [runtime-status] [1648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.726Z] [runtime-status] [1648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.727Z] [runtime-status] [1648] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-13T21:23:01.728Z] [runtime-status] [1648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.815Z] [runtime-status] [1648] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-13T21:23:01.816Z] [runtime-status] [1648] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-05-13T21:23:01.817Z] [runtime-status] [1648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.819Z] [runtime-status] [1648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.820Z] [runtime-status] [1648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:01.821Z] [runtime-status] [1648] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-05-13T21:23:02.124Z] [runtime-status] [1648] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-05-13T21:23:02.126Z] [runtime-status] [1648] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Running api in signature http"}}
+[debug] [2022-05-13T21:23:02.129Z] [runtime-status] [1648] Attempting to listen to socketPath: \\?\pipe\C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\1648 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\1648"}}
+[debug] [2022-05-13T21:23:02.134Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-13T21:23:02.135Z] [functions] Got req.url=/mycapstoneproject-1bc50/us-central1/api/payments/create?total=2598, mapping to path=/payments/create?total=2598 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mycapstoneproject-1bc50/us-central1/api/payments/create?total=2598, mapping to path=/payments/create?total=2598"}}
+[debug] [2022-05-13T21:23:02.144Z] [runtime-status] [1648] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Ephemeral server handling POST request"}}
+[info] >  payment request 2598 {"user":"payment request 2598","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m payment request 2598"}}
+[debug] [2022-05-13T21:23:02.159Z] [runtime-status] [1648] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [1648] Ephemeral server survived."}}
+[debug] [2022-05-13T21:23:02.538Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-05-13T21:23:02.538Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-05-13T21:23:02.538Z] Accepted request GET /mycapstoneproject-1bc50/us-central1/api --> us-central1-api
+[debug] [2022-05-13T21:23:02.545Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-05-13T21:23:02.546Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2022-05-13T21:23:02.546Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-05-13T21:23:02.547Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: Assigning socketPath: \\?\pipe\C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\12160 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\12160"}}
+[debug] [2022-05-13T21:23:02.547Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: BUSY"}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-05-13T21:23:02.559Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: IDLE"}}
+[debug] [2022-05-13T21:23:02.559Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-13T21:23:04.646Z] [runtime-status] [12160] Functions runtime initialized. {"cwd":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions","node_version":"14.17.3"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\",\"node_version\":\"14.17.3\"}"}}
+[debug] [2022-05-13T21:23:04.650Z] [runtime-status] [12160] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Disabled runtime features: undefined"}}
+[debug] [2022-05-13T21:23:04.654Z] [runtime-status] [12160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.657Z] [runtime-status] [12160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.657Z] [runtime-status] [12160] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-13T21:23:04.659Z] [runtime-status] [12160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.726Z] [runtime-status] [12160] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-13T21:23:04.727Z] [runtime-status] [12160] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-05-13T21:23:04.728Z] [runtime-status] [12160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.730Z] [runtime-status] [12160] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.731Z] [runtime-status] [12160] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-05-13T21:23:04.731Z] [runtime-status] [12160] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.2.0","resolution":"C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"C:\\\\Users\\\\Home\\\\Documents\\\\Navpreet-Kairon-CapstoneProject\\\\client\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-05-13T21:23:05.012Z] [runtime-status] [12160] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-05-13T21:23:05.013Z] [runtime-status] [12160] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Running api in signature http"}}
+[debug] [2022-05-13T21:23:05.017Z] [runtime-status] [12160] Attempting to listen to socketPath: \\?\pipe\C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\12160 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\12160"}}
+[debug] [2022-05-13T21:23:05.021Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-13T21:23:05.022Z] [functions] Got req.url=/mycapstoneproject-1bc50/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mycapstoneproject-1bc50/us-central1/api, mapping to path=/"}}
+[debug] [2022-05-13T21:23:05.030Z] [runtime-status] [12160] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Ephemeral server handling GET request"}}
+[debug] [2022-05-13T21:23:05.039Z] [runtime-status] [12160] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12160] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-05-13T21:23:05.044Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: IDLE"}}
+[debug] [2022-05-13T21:23:05.044Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-13T21:23:05.587Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-05-13T21:23:14.692Z] File C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-05-13T21:23:15.696Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-05-13T21:23:15.696Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: FINISHING"}}
+[debug] [2022-05-13T21:23:15.696Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-05-13T21:23:15.696Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: FINISHING"}}
+[debug] [2022-05-13T21:23:15.698Z] Validating nodejs source
+[debug] [2022-05-13T21:23:19.288Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-13T21:23:19.288Z] Building nodejs source
+[debug] [2022-05-13T21:23:19.288Z] Analyzing nodejs backend spec
+[debug] [2022-05-13T21:23:19.289Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-05-13T21:23:19.321Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: exited"}}
+[debug] [2022-05-13T21:23:19.322Z] [worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-b431e055-53c3-41f6-a6d7-36cbe52f8c67]: FINISHED"}}
+[debug] [2022-05-13T21:23:19.322Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: exited"}}
+[debug] [2022-05-13T21:23:19.322Z] [worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-9158f888-81b1-484f-9137-d81bff226b65]: FINISHED"}}
+[debug] [2022-05-13T21:23:19.635Z] Serving at port 9006
+
+[debug] [2022-05-13T21:23:19.818Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-05-13T21:23:19.824Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-05-13T21:27:14.381Z] File C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\package.json changed, reloading triggers"}}
+[debug] [2022-05-13T21:27:35.558Z] File C:\Users\Home\Documents\Navpreet-Kairon-CapstoneProject\client\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Home\\Documents\\Navpreet-Kairon-CapstoneProject\\client\\functions\\package.json changed, reloading triggers"}}
+[debug] [2022-05-13T21:27:36.564Z] Validating nodejs source
+[debug] [2022-05-13T21:27:39.507Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-13T21:27:39.507Z] Building nodejs source
+[debug] [2022-05-13T21:27:39.507Z] Analyzing nodejs backend spec
+[debug] [2022-05-13T21:27:39.508Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-05-13T21:27:39.820Z] Serving at port 9005
+
+[debug] [2022-05-13T21:27:40.000Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-05-13T21:27:40.007Z] shutdown requested via /__/quitquitquit
+
