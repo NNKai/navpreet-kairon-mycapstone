@@ -41,7 +41,7 @@ export class Products extends Component {
       }));
     return (
       <div className='big_productContainer'>
-          <div className='productTitle'><Stack><Item><h1>Our Products</h1></Item></Stack></div>
+          {/* <div className='productTitle'><Stack><Item><h1>Our Products</h1></Item></Stack></div> */}
           <div className='product_outsideContainer'>{this.state.allProduct.map((data)=>{
             return <div className='product__Container'>
                         <Box sx={{ width: '100%' }}>

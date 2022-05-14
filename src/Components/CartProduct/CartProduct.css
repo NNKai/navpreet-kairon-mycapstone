@@ -32,6 +32,11 @@
   .checkoutPage {
     width: 70%;
     margin: 0 auto;
+    top: 100px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
   }
   .checkoutPage .checkout__left .cartProduct img {
     width: 40%;

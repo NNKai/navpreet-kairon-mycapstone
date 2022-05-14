@@ -16,6 +16,7 @@ import CategoryList from './Pages/CategoryList/CategoryList';
 import Payment from './Pages/Payment/Payment';
 import {loadStripe} from '@stripe/stripe-js'
 import {Elements} from '@stripe/react-stripe-js'
+import Sidebar from './Components/Sidebar/Sidebar'
 
 const promise = loadStripe('pk_test_51KyR35AGGXbHgiGgiycNo8oK29y7INYcg3GKJUeMOIufd2aY1pPxzSHkZb45v0v8Db2xuKAXRpjTioiw2x2TMnMz00EIIyKnw9')
 
@@ -45,20 +46,21 @@ function App () {
   return (
     <div className="App">
       <BrowserRouter>
-     
+      
       <Switch>
         
       <Route exact path='/login' component={LogInPage}/>
       <Route exact path='/'>
+      <Sidebar />
         <Header/>
         <HomePage/>
       </Route>
-      <Route exact path='/products'> <Header/><Product/></Route> 
-      <Route exact path='/products/:id' ><Header/><ProductDetails/></Route>
-      <Route exact path='/category' ><Header/><CategoryList/></Route>
-      <Route exact path='/category/:category' ><Header/><CategoryPage/></Route>
-      <Route exact path='/checkoutpage'><Header/><CheckoutPage/>  </Route> 
-      <Route exact path='/payment'><Header/><Elements stripe = {promise}><Payment/></Elements></Route>
+      <Route exact path='/products'> <Sidebar /><Header/><Product/></Route> 
+      <Route exact path='/products/:id' ><Sidebar /><Header/><ProductDetails/></Route>
+      <Route exact path='/category' ><Sidebar /><Header/><CategoryList/></Route>
+      <Route exact path='/category/:category' ><Sidebar /><Header/><CategoryPage/></Route>
+      <Route exact path='/checkoutpage'><Sidebar /><Header/><CheckoutPage/>  </Route> 
+      <Route exact path='/payment'><Sidebar /><Header/><Elements stripe = {promise}><Payment/></Elements></Route>
       
       </Switch>
       </BrowserRouter>

@@ -54,25 +54,17 @@ const Header = () => {
             
         </div>
 
+        <Link to='/login'><div  onclick={handleAuthentication} className='tabletheader_option'>
+                <span className='tabletheader_optionLineTwo'>{user ? 'Sign Out ' : 'sign in'}</span>
+            </div></Link>
+
         <Link to='/checkoutpage'><div className='tabletheader_optionBasket'>
             <ShoppingCartIcon className='tabletheader_logo'/>
             <span className='tabletheader_optionLineTwo tabletheader_baskerCount'>{basket?.length}</span>
             </div></Link>
+
     </div>
-        <div className='tabletheader_nav'>
-            <div className='tabletheader_navcontainer'>
-        <div className='tabletheader_links'>
-            <Link to='/products'><div className='tabletheader_linkBar'>
-                <span className='tabletheader_linkBarOptions'>Products</span>
-            </div></Link>
-            </div>
-            </div> 
-            <Link to='/login'><div  onclick={handleAuthentication} className='tabletheader_option'>
-                <span className='tabletheader_optionLineTwo'>{user ? 'Sign Out ' : 'sign in'}</span>
-            </div></Link>
-            
-         
-        </div>
+        
     </div>
     </>
   )

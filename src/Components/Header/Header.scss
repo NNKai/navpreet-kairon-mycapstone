@@ -111,9 +111,11 @@
         align-items: center;
         flex-direction: column;
         background-color: #131921;
-        position: sticky;
+        position: absolute;
         top: 0;
-        z-index: 100;
+        z-index: 0;
+        width: 100%;
+        float: right;
         .tabletheader_nav{
             display: flex;
             color: white;
@@ -140,8 +142,8 @@
             text-align: start;
             width: 85%;
             display: flex;
-            justify-content: space-between;
-            align-items: stretch;
+            justify-content: space-evenly;
+            align-items: center;
             .tabletheader_optionBasket{
                 display: flex;
                 align-items: center;

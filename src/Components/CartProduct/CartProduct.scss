@@ -44,6 +44,9 @@
     .checkoutPage{
         width: 70%;
         margin: 0 auto;
+        top: 100px;
+            height: fit-content;
+            position: relative;
         .checkout__left{
             .cartProduct{
                 img{

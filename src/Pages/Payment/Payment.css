@@ -23,8 +23,24 @@
   height: 100vh;
 }
 
+@media (min-width: 768px) {
+  .payment_container {
+    position: relative;
+    top: 105px;
+    width: 90%;
+    margin: 0 auto;
+    margin-right: 28px;
+  }
+  .payment_container .payment_section {
+    margin-bottom: 24px;
+  }
+}
 @media (min-width: 1280px) {
-  .payment_section {
+  .payment_container {
+    margin-right: 0;
+    width: 100%;
+  }
+  .payment_container .payment_section {
     width: 40%;
   }
 }/*# sourceMappingURL=Payment.css.map */

@@ -109,10 +109,11 @@
     align-items: center;
     flex-direction: column;
     background-color: #131921;
-    position: -webkit-sticky;
-    position: sticky;
+    position: absolute;
     top: 0;
-    z-index: 100;
+    z-index: 0;
+    width: 100%;
+    float: right;
   }
   .tablet_header .tabletheader_nav {
     display: flex;
@@ -138,8 +139,8 @@
     text-align: start;
     width: 85%;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .tablet_header .tablettop_HeaderContainer .tabletheader_optionBasket {
     display: flex;

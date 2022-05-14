@@ -25,10 +25,11 @@
   height: 30px;
 }
 .logInPage form button {
-  width: 95%;
+  width: 98%;
   height: 50px;
   margin: 12px 0;
-  background-color: rebeccapurple;
+  background-color: #131921;
+  border-radius: 5%;
 }
 .logInPage form button h3 {
   -webkit-margin-after: 0;

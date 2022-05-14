@@ -73,22 +73,8 @@ function Payment() {
                     <p>Calgary, AB</p>
                 </div>
             </div>
-            <hr></hr>
-            <div className='payment_section'>
-                <div className='payment_title'>
-                </div>
-                <div className='payment_items'>
-                    {/* {basket.map(item=>(
-                        <CheckoutPage
-                        id={item.id}
-                        title={item.title}
-                        image={item.image}
-                        price={item.price}
-                        
-                        />
-                    ))} */}
-                </div>
-            </div>
+            
+            
             <div className='payment_section'>
                 <div className='payment_title'><h3>Payment Method</h3></div>
                 <div className='payment_details'>
